@@ -2,7 +2,7 @@
 O aplicativo tem a intenção de promover o cadastro de pessoas ou pequenas empresas que trabalhem com estetica
 para promover seus serviços.
 
-##Equipe de Doidos:
+##Equipe:
 1. Carlos Eduardo : Gerente
 2. Wesley Nascimento : Desenvolvedor
 3. Samuel Torres : Designer
