@@ -7,3 +7,8 @@ para promover seus serviços.
 2. Wesley Nascimento : Desenvolvedor
 3. Samuel Torres : Designer
 4. Ana Costa : Designer
+
+##Cronograma
+Data | Atividade
+
+06/09/16 | Entrega dos wireframes
