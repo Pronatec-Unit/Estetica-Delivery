@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kaduferreira.estetica.MainActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:text="Ainda Nao é Cadastrado?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/textView3"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:text="Entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnEntrar"
+        style="@style/Widget.AppCompat.Button"
+        android:textSize="18sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_alignEnd="@+id/editText3"
+        android:textColor="@android:color/background_light"
+        android:background="#FFFAB3B5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="15"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:paddingLeft="7dp"
+        android:hint="Senha" />
+
+    <Button
+        android:text="Esqueçeu sua senha?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEntrar"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textSize="12sp"
+        android:id="@+id/btnEsqSenha" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="15"
+        android:layout_marginTop="140dp"
+        android:id="@+id/editText"
+        android:background="@android:color/background_light"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:textAlignment="viewStart"
+        android:paddingLeft="7dp"
+        android:layout_centerHorizontal="true"
+        android:hint="E-mail" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/esta"
+        android:id="@+id/imageView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Faça aqui seu cadastro!!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCadastrar"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

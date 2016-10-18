@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFCFEEFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimary">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:layout_below="@+id/textView9"
+                android:layout_alignStart="@+id/txtNome"
+                android:id="@+id/txtEmail"
+                android:layout_alignParentEnd="true"
+                android:background="#fff"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="15dp"
+                android:hint="Digite seu e-mail" />
+
+            <TextView
+                android:text="Senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:id="@+id/textView10"
+                android:textSize="22sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/textView10"
+                android:layout_alignStart="@+id/txtEmail"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtSenha"
+                android:inputType="textPassword"
+                android:layout_alignParentEnd="true"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:background="#fff"
+                android:autoText="false"
+                android:hint="Digite sua senha" />
+
+            <TextView
+                android:text="Confirmar Senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSenha"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:id="@+id/textView12"
+                android:textSize="22sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:layout_below="@+id/textView12"
+                android:layout_alignStart="@+id/txtSenha"
+                android:id="@+id/txtConfSenha"
+                android:layout_alignParentEnd="true"
+                android:background="#fff"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="15dp" />
+
+            <CheckBox
+                android:text="Aceito os termos do Usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnConfirmarTermos"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/txtConfSenha"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:text="Cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnFimCadastro"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/btnCancelarCadastro"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:textStyle="normal|bold"
+                android:background="#FFFAB3B5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/esta"
+                android:id="@+id/imageView4"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="E-mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:id="@+id/textView9"
+                android:textSize="22sp"
+                android:layout_below="@+id/txtNome"
+                android:layout_alignEnd="@+id/textView10" />
+
+            <TextView
+                android:text="Nome Completo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textSize="22sp"
+                android:layout_below="@+id/imageView4"
+                android:layout_alignEnd="@+id/textView12"
+                android:layout_marginTop="33dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtNome"
+                android:background="#fff"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:scrollbarSize="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/textView8"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:hint="Digite seu nome" />
+
+            <Button
+                android:text="Cadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFimCadastro"
+                android:autoText="false"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textStyle="normal|bold"
+                android:background="#FFFFD8B1"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="21dp"
+                android:layout_below="@+id/btnConfirmarTermos"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/caramba"
+                android:layout_marginTop="13dp"
+                android:id="@+id/imageView27"
+                android:layout_below="@+id/btnCancelarCadastro"
+                android:background="@android:color/background_light"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

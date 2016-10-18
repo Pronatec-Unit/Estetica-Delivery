@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView7"
+        app:tabIndicatorColor="?android:attr/colorPrimary"
+        android:background="@android:color/background_light">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TabLayout>
+
+    <TextView
+        android:text="Descrição:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView11"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <ImageView
+        app:srcCompat="@drawable/dsd"
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:text="Nome :Nome da Empresa / Pessoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:layout_marginStart="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView7" />
+
+    <Button
+        android:text="Alterar Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="20dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:textStyle="normal|bold"
+        android:textSize="16sp" />
+
+    <Button
+        android:text="Alterar Senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:id="@+id/btn2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="20dp"
+        android:background="@android:color/transparent"
+        android:textStyle="normal|bold"
+        android:textSize="16sp" />
+
+    <Button
+        android:text="Meus Serviços"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn3"
+        android:layout_alignParentEnd="true"
+        android:padding="20dp"
+        android:background="@android:color/transparent"
+        android:textStyle="normal|bold"
+        android:textSize="16sp" />
+
+    <Button
+        android:text="Recuperar Senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn4"
+        android:layout_alignParentEnd="true"
+        android:padding="20dp"
+        android:background="@android:color/transparent"
+        android:textStyle="normal|bold"
+        android:textSize="16sp" />
+
+    <Button
+        android:text="Sair da Conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDeslogar"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/caramba"
+        android:id="@+id/imageView21"
+        android:layout_above="@+id/btnDeslogar"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/seta"
+        android:layout_above="@+id/btn2"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/imageView23" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/seta"
+        android:layout_below="@+id/btn1"
+        android:layout_alignStart="@+id/imageView23"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView24" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/seta"
+        android:layout_below="@+id/btn2"
+        android:layout_alignStart="@+id/imageView24"
+        android:layout_marginTop="11dp"
+        android:id="@+id/imageView25" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/seta"
+        android:layout_below="@+id/btn3"
+        android:layout_alignStart="@+id/imageView25"
+        android:layout_marginTop="12dp"
+        android:id="@+id/imageView26" />
+
+</RelativeLayout>
