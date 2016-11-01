@@ -7,6 +7,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.kaduferreira.estetica.Base"
     tools:showIn="@layout/app_bar_base"
+    android:id="@+id/Base"
     android:background="@android:color/background_light">
 
     <FrameLayout
@@ -17,6 +18,10 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv" />
     </FrameLayout>
 
 </RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "742316283220",
+    "firebase_url": "https://esteticaauth.firebaseio.com",
+    "project_id": "esteticaauth",
+    "storage_bucket": "esteticaauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742316283220:android:15a21f37bc2299ba",
+        "android_client_info": {
+          "package_name": "com.kaduferreira.estetica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742316283220-2jq91sfjqukhmus00l5qan9fsrvq7fe8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kaduferreira.estetica",
+            "certificate_hash": "3DA71381B6230246535A72B57AAAEF8D2C5C90BA"
+          }
+        },
+        {
+          "client_id": "742316283220-jp4gi39pe7mtvvpkn76lee5294ij2tog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhP2xLwc_zqcFrcLyZn_5ZQg-wA-k5LjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742316283220-jp4gi39pe7mtvvpkn76lee5294ij2tog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

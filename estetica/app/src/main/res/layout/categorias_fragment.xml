@@ -1,182 +1,226 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent" android:layout_height="match_parent"
+android:fillViewport="true"
+    android:id="@+id/Scroll"
     android:background="@color/colorPrimary">
 
-    <TextView
-        android:text="Estética Delivery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:textStyle="normal|bold"
-        android:fontFamily="serif-monospace"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"
-        android:layout_weight="1"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:text="Depilação"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txtDepilação"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"
+            android:textColor="#B6000000"
+            android:layout_below="@+id/txtTrataPele"
+            android:layout_alignStart="@+id/txtTrataPele"
+            android:fontFamily="cursive" />
+
+        <TextView
+            android:text="Massagista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:id="@+id/txtMassagista"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"
+            android:textColor="#B6000000"
+            android:fontFamily="cursive" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bar"
+            android:layout_below="@+id/imgCabelo"
+            android:layout_alignEnd="@+id/imgCabelo"
+            android:id="@+id/imgManicure" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ubg"
+            android:layout_below="@+id/imgManicure"
+            android:layout_alignEnd="@+id/imgManicure"
+            android:id="@+id/imgMassagista" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dep"
+            android:layout_below="@+id/imgMassagista"
+            android:layout_alignEnd="@+id/imgMassagista"
+            android:id="@+id/imgTrataPele" />
+
+        <TextView
+            android:text="Escolha a Categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:fontFamily="serif-monospace"
+            android:textColor="@android:color/black"
+            android:paddingBottom="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/progressBar4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/background_light" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cr"
+            android:layout_below="@+id/imgTrataPele"
+            android:layout_alignEnd="@+id/imgTrataPele"
+            android:id="@+id/imgDepilação" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cabed"
+            android:id="@+id/imgCabelo"
+            android:layout_below="@+id/imgMassagem"
+            android:layout_alignStart="@+id/imgMassagem" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pes"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:id="@+id/imgMassagem" />
+
+
+
+        <TextView
+            android:text="Cabeleireira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCabelo"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"
+            android:textColor="#B6000000"
+            android:layout_above="@+id/imgManicure"
+            android:layout_alignStart="@+id/txtMassagista"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="cursive" />
+
+        <TextView
+            android:text="Manicure e Pedicure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtManicure"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"
+            android:textColor="#B6000000"
+            android:layout_above="@+id/imgMassagista"
+            android:layout_alignStart="@+id/txtCabelo"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="cursive" />
+
+        <TextView
+            android:text="Tratamento Facial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTrataPele"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"
+            android:textColor="#B6000000"
+            android:layout_above="@+id/imgDepilação"
+            android:layout_alignStart="@+id/textView33"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="cursive" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cr"
+            android:id="@+id/imgBarbeiro"
+            android:layout_below="@+id/imgDepilação"
+            android:layout_alignStart="@+id/imgDepilação" />
+
+        <TextView
+            android:text="Barbeiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBarbeiro"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"
+            android:textColor="#B6000000"
+            android:layout_alignBottom="@+id/imgBarbeiro"
+            android:layout_alignStart="@+id/txtDepilação"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="cursive" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cabed"
+            android:id="@+id/imageButton"
+            android:layout_below="@+id/imgBarbeiro"
+            android:layout_alignStart="@+id/imgDepilação" />
+
+        <TextView
+            android:text="Sobrancelha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSobrancelha"
+            android:textSize="26sp"
+            android:fontFamily="cursive"
+            android:textStyle="normal|bold"
+            android:textColor="#B6000000"
+            android:layout_below="@+id/txtBarbeiro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:text="Massagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView33"
+            android:textSize="26sp"
+            android:textStyle="normal|bold"
+            android:textColor="#B6000000"
+            android:paddingTop="13dp"
+            android:fontFamily="cursive"
+            android:layout_below="@+id/txtManicure"
+            android:layout_alignStart="@+id/txtManicure" />
+
+    </RelativeLayout>
     <ImageView
         android:layout_width="match_parent"
         app:srcCompat="@drawable/caramba"
-        android:id="@+id/imageView12"
+        android:id="@+id/imgLogo"
         android:layout_height="60dp"
         android:background="@android:color/background_light"
-        android:layout_above="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true" />
-
-    <TextView
-        android:text="Todas as Categorias"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView38"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_marginTop="21dp"
-        android:layout_below="@+id/textView6"
-        android:layout_alignStart="@+id/textView37"
-        android:layout_toStartOf="@+id/textView7" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/bar"
-        android:layout_below="@+id/imageButton11"
-        android:layout_alignEnd="@+id/imageButton11"
-        android:id="@+id/imageButton12" />
-
-    <TextView
-        android:text="Manicure e Pedicure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView36"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_below="@+id/imageButton12"
-        android:layout_alignStart="@+id/textView35"
-        android:layout_marginTop="16dp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ubg"
-        android:layout_below="@+id/imageButton12"
-        android:layout_alignEnd="@+id/imageButton12"
-        android:id="@+id/imageButton13" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/dep"
-        android:layout_below="@+id/imageButton13"
-        android:layout_alignEnd="@+id/imageButton13"
-        android:id="@+id/imageButton14" />
-
-    <TextView
-        android:text="Escolha a Categoria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView6"
-        android:textSize="24sp"
-        android:textStyle="normal|bold"
-        android:fontFamily="serif-monospace"
-        android:textColor="@android:color/black"
-        android:paddingBottom="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <ProgressBar
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView6"
-        android:layout_marginBottom="12dp"
-        android:id="@+id/progressBar4"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:background="@android:color/background_light" />
-
-    <TextView
-        android:text="Tratamento de Pele"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView34"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_below="@+id/imageButton14"
-        android:layout_alignStart="@+id/textView38"
-        android:layout_marginTop="16dp" />
-
-    <TextView
-        android:text="Massagista"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView7"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_centerInParent="false"
-        android:layout_marginLeft="50dp"
-        android:layout_below="@+id/textView6"
-        android:layout_alignStart="@+id/textView2" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/pes"
-        android:id="@+id/imageButton9"
-        android:layout_marginTop="15dp"
-        android:layout_alignTop="@+id/progressBar4"
-        android:layout_toStartOf="@+id/textView7" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/cr"
-        android:layout_below="@+id/imageButton14"
-        android:layout_alignEnd="@+id/imageButton14"
-        android:id="@+id/imageButton2" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/cabed"
-        android:id="@+id/imageButton11"
-        android:layout_below="@+id/imageButton9"
-        android:layout_alignStart="@+id/imageButton9" />
-
-    <TextView
-        android:text="Depilação"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView37"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_above="@+id/imageButton2"
-        android:layout_alignStart="@+id/textView36"
-        android:layout_marginBottom="18dp" />
-
-    <TextView
-        android:text="Cabeleleiro/Cabeleleira"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView33"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_marginTop="13dp"
-        android:layout_below="@+id/imageButton9"
-        android:layout_alignStart="@+id/textView7" />
-
-    <TextView
-        android:text="Barbeiro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView35"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        android:layout_above="@+id/textView36"
-        android:layout_alignStart="@+id/textView33"
-        android:layout_marginBottom="19dp" />
-
-</RelativeLayout>
+        android:layout_below="@+id/imgDepilação"
+        android:layout_alignParentStart="true" />
+</LinearLayout>
+</ScrollView>
